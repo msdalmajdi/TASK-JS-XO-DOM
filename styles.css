@@ -1,4 +1,4 @@
-body {
+body { 
   display: flex;
   height: 100vh;
   width: 100vw;
@@ -20,7 +20,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: x-large;
+  font-size: large;
   background-color: #e3e3e3;
   width: 85px;
   height: 85px;
@@ -31,6 +31,7 @@ body {
   margin: 10px;
 
   font-family: "Permanent Marker", cursive;
+
 }
 
 .green {
@@ -39,4 +40,24 @@ body {
 
 .red {
   color: red;
+}
+
+.animate{
+
+  animation-name: bigtosmall;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes bigtosmall {
+  0%{ 
+    font-size:large;
+  }
+  50%{
+    font-size:x-large;
+  }
+  100%{
+    
+    font-size:xx-large;
+  }
 }
